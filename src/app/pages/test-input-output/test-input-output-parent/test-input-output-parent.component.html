@@ -1,0 +1,7 @@
+<h1> @Input and @Output testing example </h1>
+
+<div *ngFor="let user of users; index as i" class="user-card" (click)="selectedUser = user">
+  {{ user.name }}&nbsp;&nbsp;{{ user.age }}
+</div>
+
+<app-test-input-output-child [setUser]="selectedUser" (userUpdated)="updateUser($event)"></app-test-input-output-child>

@@ -1,0 +1,5 @@
+<input id="nameInput" type="text" placeholder="Enter name" [(ngModel)]="userInput" />&nbsp;&nbsp;
+<button id="showMessageBtn" (click)="isClicked = !isClicked">{{isClicked ? 'Refresh' : 'Show'}} message</button>
+<br>
+<br>
+<div id="messageDiv" *ngIf="isClicked" appHello [userInfo]="userInput"></div>
