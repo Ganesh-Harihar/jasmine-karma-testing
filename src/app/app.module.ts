@@ -7,10 +7,11 @@ import { TestStringArrayComponent } from './pages/test-string-array/test-string-
 import { SpyOnComponent } from './pages/spy-on/spy-on.component';
 import { ChangeDetectionComponent } from './pages/change-detection/change-detection.component';
 import { AsyncTestingComponent } from './pages/async-testing/async-testing.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TestAttributeDirectiveComponent } from './pages/test-attribute-directive/test-attribute-directive.component';
 import { HelloDirective } from './directives/hello.directive';
 import { TestInputOutputModule } from './pages/test-input-output/test-input-output.module';
+import { TestReactiveFormComponent } from './pages/test-reactive-form/test-reactive-form.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +21,15 @@ import { TestInputOutputModule } from './pages/test-input-output/test-input-outp
     ChangeDetectionComponent,
     AsyncTestingComponent,
     TestAttributeDirectiveComponent,
-    HelloDirective
+    HelloDirective,
+    TestReactiveFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    TestInputOutputModule
+    TestInputOutputModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,9 @@
+<h1>Login Form</h1>
+<p id="loginMessage" *ngIf="isSubmitted">logged in succesfully</p>
+<form [formGroup]="loginForm">
+  <label>email:</label><br /><br />
+  <input type="email" id="email" formControlName="email" placeholder="Enter email"/><br/><br/>
+  <label>password:</label><br /><br />
+  <input type="password" id="password" formControlName="password" placeholder="Enter password"/><br/><br/>
+  <button type="submit" id="submitBtn" [disabled]="loginForm.invalid" (click)="login()">Submit</button>
+</form>
