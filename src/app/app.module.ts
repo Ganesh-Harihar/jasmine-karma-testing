@@ -13,6 +13,7 @@ import { HelloDirective } from './directives/hello.directive';
 import { TestInputOutputModule } from './pages/test-input-output/test-input-output.module';
 import { TestReactiveFormComponent } from './pages/test-reactive-form/test-reactive-form.component';
 import { TestTemplateDrivenFormComponent } from './pages/test-template-driven-form/test-template-driven-form.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { TestTemplateDrivenFormComponent } from './pages/test-template-driven-fo
     AppRoutingModule,
     FormsModule,
     TestInputOutputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
