@@ -12,6 +12,7 @@ import { TestAttributeDirectiveComponent } from './pages/test-attribute-directiv
 import { HelloDirective } from './directives/hello.directive';
 import { TestInputOutputModule } from './pages/test-input-output/test-input-output.module';
 import { TestReactiveFormComponent } from './pages/test-reactive-form/test-reactive-form.component';
+import { TestTemplateDrivenFormComponent } from './pages/test-template-driven-form/test-template-driven-form.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TestReactiveFormComponent } from './pages/test-reactive-form/test-react
     AsyncTestingComponent,
     TestAttributeDirectiveComponent,
     HelloDirective,
-    TestReactiveFormComponent
+    TestReactiveFormComponent,
+    TestTemplateDrivenFormComponent
   ],
   imports: [
     BrowserModule,

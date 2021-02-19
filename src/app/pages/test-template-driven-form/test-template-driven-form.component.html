@@ -1,0 +1,14 @@
+<div>
+  <form name="forgotForm" #forgotForm="ngForm">
+    <h4>Template driven form</h4>
+    <div>
+      <span>{{message}}</span>
+    </div>
+    <div>
+      <label>Email:</label>&nbsp;&nbsp;
+      <input id="email" type="text" #email="ngModel" ngModel required email placeholder="Enter email" name="email"> <br/><br/>
+      <span *ngIf="email.touched && email.errors &&(email.errors['required'] || email.errors['email'])">Email(valid) is required.</span> <br/><br/>
+      <button id="sendEmailBtn" type="button" (click)="sendEmail()" disabled="{{forgotForm.invalid}}">Send</button>
+    </div>
+  </form>
+</div>

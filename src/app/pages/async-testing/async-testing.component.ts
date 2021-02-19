@@ -24,7 +24,6 @@ export class AsyncTestingComponent implements OnInit {
   filterProductList(): void {
     this.productService.filterProductList(this.searchText).then((data) => {
       this.products = data;
-      console.log('this.products', this.products);
     })
   }
 }
