@@ -14,6 +14,7 @@ import { TestInputOutputModule } from './pages/test-input-output/test-input-outp
 import { TestReactiveFormComponent } from './pages/test-reactive-form/test-reactive-form.component';
 import { TestTemplateDrivenFormComponent } from './pages/test-template-driven-form/test-template-driven-form.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TestPrivateMethodComponent } from './pages/test-private-method/test-private-method.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     TestAttributeDirectiveComponent,
     HelloDirective,
     TestReactiveFormComponent,
-    TestTemplateDrivenFormComponent
+    TestTemplateDrivenFormComponent,
+    TestPrivateMethodComponent
   ],
   imports: [
     BrowserModule,
